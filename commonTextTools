@@ -1,0 +1,14 @@
+#tools to edit text
+
+cat    dumps contents on screen , not very useful for larget text files 
+
+less   works better for large files, has / utility which allows for searching within 
+
+head   diplays the first lines of a file 
+
+tails  dislpays the last lines or tail of  file 
+
+cut    command 
+
+tr     translates or replaces 
+

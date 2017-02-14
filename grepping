@@ -1,0 +1,11 @@
+ps aux | grep http
+
+will list the aux process feed the input to grep http which will filtter http 
+
+grep lisa * 2> /dev/null 
+
+will look for liksa and send the errors to /dev/null device 
+
+grep -i option will make it case insensitive 
+
+q

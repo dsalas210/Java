@@ -1,0 +1,37 @@
+regular expressions  
+
+text patterns used by grep and others. 
+
+do not confuse with globbing. they look like it, but they are not the same. 
+
+man 7 regex fo details 
+
+Character 		Definition			Example		Result
+
+^			Start of String			^abc		abc,abced,abc213
+
+$			End of String			abc$		abc,blahblahabc,123abc. 
+
+.			Any character except newline    a.c		abc.aac.a2c
+
+|			Alteration			1|8		1,8
+
+{...}			Explicit quantity of		ab{2}c		abbc
+			preceding char			
+
+[...]			Explicit set of char 
+			to match			a[bB]c		abc,aBc
+
+(...)			Group of characters		(123){3}	123123123
+
+*			Null or more of the preceding   ab*c		ac,abc,abbbbbbc
+			characeters
+
++			One or more of the precending   ab+c		abc,abbbbc
+                        character
+
+?			more  or one of the preceding    ab+c            abc.abbbbbc
+                        character
+
+?			Null or one of the preceding   ab?c		ac ,abc
+                         character 

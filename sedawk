@@ -1,0 +1,35 @@
+sed -n /^root/p  /etc/passwd
+
+sed look for root and print from /etc/passwd file 
+
+Sytanx: sed [-n
+
+-n only print lines speciffied with the pring command (or p flag susbstitute s command 
+
+-f scriptfile next arguement is a filename containing editing commands 
+
+-e the next argument is an editing command rather than a filename, useful if multiple command are specified 
+
+			SUBSTITUTE
+
+Sytanx
+[address(es)]s/pattern/replacement/[flags]
+--pattern search pattern 
+-- replacement replacement string for pattern 
+-- flags - optionally any fof the following 
+
+n  a number from 1 to 512 indicating which occurrence of pattern should be replaced 
+
+g gloval replace all occurrences of pattern in apttern space 
+
+p print contents of pattern space
+
+			REPLACEMENT 
+
+Susbtitutes can use several special characters in the replacement string
+
+-  & - replaced by the entire string mathed in the regular expression for pattern 
+- \n - replaced by the nth substring  or subexpression) previous specifed using "\(" and "\)"
+-  \ - used to escape the amersand & and the backlash \
+ 
+

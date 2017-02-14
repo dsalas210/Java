@@ -1,0 +1,33 @@
+								User properties
+username identifier 
+	lisa:x:10001:10001:Sales Department:/hom/liksa:/bin/bash
+password 
+
+	lisa:x:10001:10001:Sales Department:/hom/liksa:/bin/bash
+
+the password used to be display but now is in /etc/shadow
+looks like this : lisa:!!: 16161:0:99999:7:::
+oNLY TAKEAWAY is the !!!. the !! means the user acc is disabled
+
+UID user identificaiton number 
+
+ 
+	lisa:x:10001:10001:Sales Department:/hom/liksa:/bin/bash
+the 1001 is the UID of lisa. Root is typically 1. there are a total of 64000 user id available 
+
+
+GID group identification number 
+	every member is part of AT LEASt one group 
+	lisa:x:10001:10001:Sales Department:/hom/liksa:/bin/bash
+	The second set of numbers is the GID of this user
+	GID is saved in /etc/groups 
+
+GECOS
+	lisa:x:10001:10001:Sales Department:/hom/liksa:/bin/bash
+its the english like identifier for human purposes. in this instance its Sales department 
+HOME DIRETORY 
+
+	lisa:x:10001:10001:Sales Department:/hom/liksa:/bin/bash
+Default Shell
+bash 
+
